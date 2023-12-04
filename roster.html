@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Detroit Red Wings</title>
+</head>
+<body>
+    <!-- Image that triggers the lightbox -->
+
+<!-- The lightbox overlay and content -->
+<div id="lightbox-overlay1">
+    <div id="lightbox-content1">
+        <span id="close-button" onclick="closeLightbox1()">X</span>
+        <video controls width="640" height="360" id="lightbox-video1">
+            <source src="images/Happy Birthday 🥳 Dylan Larkin! _ Top 5 Plays from 2021-22.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<div id="lightbox-overlay2">
+    <div id="lightbox-content2">
+        <span id="close-button" onclick="closeLightbox2()">X</span>
+        <video controls width="640" height="360" id="lightbox-video2">
+            <source src="images/Joe Veleno scores his first NHL goal.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<div id="lightbox-overlay3">
+    <div id="lightbox-content3">
+        <span id="close-button" onclick="closeLightbox3()">X</span>
+        <video controls width="640" height="360" id="lightbox-video3">
+            <source src="images/Red Wings  Lucas Raymond Makes Nifty Move Behind Net to Slip Puck Past Blue Jackets  Spencer Martin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<div id="lightbox-overlay4">
+    <div id="lightbox-content4">
+        <span id="close-button" onclick="closeLightbox4()">X</span>
+        <video controls width="640" height="360" id="lightbox-video4">
+            <source src="images/Red Wings  Moritz Seider Goes Top Shelf With Backhand For Shorthanded Goal On Breakaway.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<div id="lightbox-overlay5">
+    <div id="lightbox-content5">
+        <span id="close-button" onclick="closeLightbox5()">X</span>
+        <video controls width="640" height="360" id="lightbox-video5">
+            <source src="images/Red Wings  Jake Walman Scores With THREE Seconds Remaining In Game To Beat Hurricanes.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<div id="lightbox-overlay6">
+    <div id="lightbox-content6">
+        <span id="close-button" onclick="closeLightbox6()">X</span>
+        <video controls width="640" height="360" id="lightbox-video6">
+            <source src="images/Husso Robs Canadiens With Huge Save To Keep Red Wings Alive At The End Of Regulation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
+
+
+    <header>
+        <h1>Detroit Red Wings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">History</a></li>
+                <li><a href="roster.html" class = "active">Lineup</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="roster">
+            <h2>Starting Lineup</h2>
+            <div class="image-pyramid">
+                <div class="row">
+                    <div class = player>
+                        <img src="images/veleno.jpeg" alt="Joe veleno" class = "rosterimg" id = "lightbox-trigger2">
+                        <ul class = playerinfo>
+                            <li>Position: LW</li>
+                            <li>Name: Joe Veleno</li>
+                            <li>Number: 90</li>
+                        </ul>
+                    </div>
+                    <div class = player>
+                        <img src="images/larkin.jpeg" alt="Dylan larkin" class = "rosterimg" id = "lightbox-trigger1">
+                        <ul class = playerinfo>
+                            <li>Position: C</li>
+                            <li>Name: Dylan Larkin</li>
+                            <li>Number: 71</li>
+                        </ul>
+                    </div>
+                    <div class = player>
+                        <img src="images/raymond.jpeg" alt="Lucas Raymond" class = "rosterimg" id = "lightbox-trigger3">
+                        <ul class = playerinfo>
+                            <li>Position: RW</li>
+                            <li>Name: Lucas Raymond</li>
+                            <li>Number: 23</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class = player>
+                        <img src="images/walman.jpeg" alt="Jake Walman" class = "rosterimg" id = "lightbox-trigger5">
+                        <ul class = playerinfo>
+                            <li>Position: LD</li>
+                            <li>Name: Jake Walman</li>
+                            <li>Number: 96</li>
+                        </ul>
+                    </div>
+                    <div class = player>
+                        <img src="images/seider.jpeg" alt="Moritz Seider" class = "rosterimg" id = "lightbox-trigger4">
+                        <ul class = playerinfo>
+                            <li>Position: RD</li>
+                            <li>Name: Moritz Seider</li>
+                            <li>Number: 53</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = player>
+                        <img src="images/husso.webp" alt="Ville Husso" class = "rosterimg" id = lightbox-trigger6>
+                        <ul class = playerinfo>
+                            <li>Position: G</li>
+                            <li>Name: Ville Husso</li>
+                            <li>Number: 35</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Function to open the lightbox and play the video
+        function openLightbox1() {
+            document.getElementById('lightbox-overlay1').style.display = 'flex';
+            document.getElementById('lightbox-video1').play();
+        }
+    
+        // Function to close the lightbox and pause the video
+        function closeLightbox1() {
+            document.getElementById('lightbox-overlay1').style.display = 'none';
+            document.getElementById('lightbox-video1').pause();
+        }
+    
+        // Add click event listener to the image
+        document.getElementById('lightbox-trigger1').addEventListener('click', openLightbox1);
+    </script>
+    <script>
+        // Function to open the lightbox and play the video
+        function openLightbox2() {
+            document.getElementById('lightbox-overlay2').style.display = 'flex';
+            document.getElementById('lightbox-video2').play();
+        }
+    
+        // Function to close the lightbox and pause the video
+        function closeLightbox2() {
+            document.getElementById('lightbox-overlay2').style.display = 'none';
+            document.getElementById('lightbox-video2').pause();
+        }
+    
+        // Add click event listener to the image
+        document.getElementById('lightbox-trigger2').addEventListener('click', openLightbox2);
+    </script>
+    <script>
+        // Function to open the lightbox and play the video
+        function openLightbox3() {
+            document.getElementById('lightbox-overlay3').style.display = 'flex';
+            document.getElementById('lightbox-video3').play();
+        }
+    
+        // Function to close the lightbox and pause the video
+        function closeLightbox3() {
+            document.getElementById('lightbox-overlay3').style.display = 'none';
+            document.getElementById('lightbox-video3').pause();
+        }
+    
+        // Add click event listener to the image
+        document.getElementById('lightbox-trigger3').addEventListener('click', openLightbox3);
+    </script>
+    <script>
+        // Function to open the lightbox and play the video
+        function openLightbox4() {
+            document.getElementById('lightbox-overlay4').style.display = 'flex';
+            document.getElementById('lightbox-video4').play();
+        }
+    
+        // Function to close the lightbox and pause the video
+        function closeLightbox4() {
+            document.getElementById('lightbox-overlay4').style.display = 'none';
+            document.getElementById('lightbox-video4').pause();
+        }
+    
+        // Add click event listener to the image
+        document.getElementById('lightbox-trigger4').addEventListener('click', openLightbox4);
+    </script>
+    <script>
+        // Function to open the lightbox and play the video
+        function openLightbox5() {
+            document.getElementById('lightbox-overlay5').style.display = 'flex';
+            document.getElementById('lightbox-video5').play();
+        }
+    
+        // Function to close the lightbox and pause the video
+        function closeLightbox5() {
+            document.getElementById('lightbox-overlay5').style.display = 'none';
+            document.getElementById('lightbox-video5').pause();
+        }
+    
+        // Add click event listener to the image
+        document.getElementById('lightbox-trigger5').addEventListener('click', openLightbox5);
+    </script>
+    <script>
+        // Function to open the lightbox and play the video
+        function openLightbox6() {
+            document.getElementById('lightbox-overlay6').style.display = 'flex';
+            document.getElementById('lightbox-video6').play();
+        }
+    
+        // Function to close the lightbox and pause the video
+        function closeLightbox6() {
+            document.getElementById('lightbox-overlay6').style.display = 'none';
+            document.getElementById('lightbox-video6').pause();
+        }
+    
+        // Add click event listener to the image
+        document.getElementById('lightbox-trigger6').addEventListener('click', openLightbox6);
+    </script>
+    <footer>
+        <p>&copy; 2023 Detroit Red Wings</p>
+    </footer>
+
+</body>
+</html>
